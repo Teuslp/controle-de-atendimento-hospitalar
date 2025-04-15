@@ -1,0 +1,21 @@
+# Ignorar node_modules em qualquer lugar
+**/node_modules/
+
+# Ignorar arquivos .env (configurações sensíveis)
+**/.env
+
+# Ignorar logs
+*.log
+npm-debug.log*
+
+# Ignorar arquivos temporários
+.DS_Store
+Thumbs.db
+
+# Ignorar builds (caso gere arquivos de produção)
+frontend/build/
+backend/dist/
+
+# Ignorar arquivos de banco locais
+**/*.sqlite
+**/*.db
