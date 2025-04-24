@@ -1,0 +1,190 @@
+:root {
+  --primary: #1976d2;
+  --secondary: #ff5722;
+  --background: #f5f7fa;
+  --card-bg: #ffffff;
+  --text: #333333;
+  --success: #4caf50;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.totem-section, .painel-section {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+}
+
+/* Estilos do Painel */
+.senha-atual {
+  text-align: center;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: linear-gradient(135deg, var(--primary) 0%, #2196f3 100%);
+  color: white;
+  border-radius: 8px;
+}
+
+.senha-atual h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detalhes-senha {
+  background: rgba(255,255,255,0.2);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.detalhes-senha p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botões */
+button {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+button:hover {
+  background-color: #e64a19;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Histórico */
+.historico {
+  margin-top: 1.5rem;
+}
+
+.historico ul {
+  list-style: none;
+  padding: 0;
+}
+
+.historico li {
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.senha-codigo {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.senha-detalhes {
+  color: #666;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Mensagens */
+.mensagem {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  text-align: center;
+}
+
+/* Ícones */
+.icon {
+  margin-right: 8px;
+  vertical-align: middle;
+  font-size: 1.1em;
+}
+
+.icon-small {
+  font-size: 0.9em;
+  margin-right: 5px;
+  opacity: 0.7;
+}
+
+.senha-atual .icon {
+  font-size: 1.5em;
+  margin-right: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .senha-atual h1 {
+    font-size: 2rem;
+  }
+  
+  button {
+    padding: 0.8rem;
+  }
+}
